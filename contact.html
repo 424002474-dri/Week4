@@ -4,34 +4,55 @@
     <title>Contact Me</title>
 
     <style>
-        body {
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
             background-color: #121212;
             color: #e0e0e0;
             font-family: Arial, sans-serif;
-            margin: 40px;
         }
 
-        nav {
-            margin-bottom: 20px;
+        header{
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
         }
 
-        nav a {
+        header h1{
+            color: white;
+        }
+
+        nav{
+            margin-top: 10px;
+        }
+
+        nav a{
             color: #90caf9;
             text-decoration: none;
-            margin-right: 15px;
+            margin: 0 10px;
             font-weight: bold;
         }
 
-        nav a:hover {
+        nav a:hover{
             color: white;
         }
 
-        h1 {
-            color: white;
+        main{
+            padding: 40px;
         }
 
-        input, textarea {
-            width: 300px;
+        form{
+            margin-top: 20px;
+        }
+
+        input, textarea{
+            width: 100%;
+            max-width: 400px;
             padding: 10px;
             margin-top: 5px;
             margin-bottom: 15px;
@@ -41,40 +62,63 @@
             color: white;
         }
 
-        input[type="submit"] {
+        input[type="submit"]{
             background-color: #90caf9;
             color: black;
             font-weight: bold;
             cursor: pointer;
         }
 
-        input[type="submit"]:hover {
+        input[type="submit"]:hover{
             background-color: white;
+        }
+
+        footer{
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            color: #aaaaaa;
         }
     </style>
 
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+        <h1>Contact Me</h1>
 
-    <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text"><br>
+    <main>
 
-        <label>Email:</label><br>
-        <input type="email"><br>
+        <h2>Send a Message</h2>
 
-        <label>Message:</label><br>
-        <textarea rows="5"></textarea><br>
+        <form>
 
-        <input type="submit" value="Send">
-    </form>
+            <label>Name:</label><br>
+            <input type="text"><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5"></textarea><br>
+
+            <input type="submit" value="Send">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Franz Adrian M. Riel | Contact Page</p>
+    </footer>
 
 </body>
 </html>
